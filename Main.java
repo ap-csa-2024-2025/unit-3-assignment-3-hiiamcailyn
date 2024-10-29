@@ -4,24 +4,24 @@ public class Main
 {
   public static void main(String[] args)
   {
-    public class boolean rectEquals(Rectngle r1, Rectangle rectEqual)
-    {
-      boolean equalWidth
-    }
     // TODO: Problem 1
     Scanner sc = new Scanner(System.in);
-    int x = sc.nextInt();
-    int y = sc.nextInt(); 
+    int x1 = sc.nextInt(5);
+    int x2 = sc.nextInt(9); 
 
-    if (y==0)
+    if (x2 == 0)
     {
       System.out.print("Error Message");
     }
-    else if (((x2 / x1) <= 8) && ((x2 /x1) > 1))
+    else 
     {
-      System.out.print("Ratio ok");
+      double ratio = (double) x1/ x2;
+      if  (1 < ratio && ratio <= 8)
+      {
+        System.out.println("Ratio ok");
+      }
     }
-    
+  }
 
 
 
@@ -36,9 +36,9 @@ public class Main
   // true if they are equal, and false otherwise.  Two
   // Rectangles are considered equal if their widths are equal,
   // and if their lengths are equal.
-  public static boolean rectEqual(Rectangle r1, Rectangle r2)
-  {
-    // implement solution here
-    return false;
+  // public static boolean rectEqual(Rectangle r1, Rectangle r2)
+  // {
+  //   // implement solution here
+  //   return false;
   }
 }
