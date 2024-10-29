@@ -6,8 +6,8 @@ public class Main
   {
     // TODO: Problem 1
     Scanner sc = new Scanner(System.in);
-    int x1 = sc.nextInt(5);
-    int x2 = sc.nextInt(9); 
+    int x1 = sc.nextInt();
+    int x2 = sc.nextInt(); 
 
     if (x2 == 0)
     {
