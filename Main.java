@@ -9,14 +9,20 @@ public class Main
       boolean equalWidth
     }
     // TODO: Problem 1
+    Scanner sc = new Scanner(System.in);
     int x = sc.nextInt();
     int y = sc.nextInt(); 
-    System.out.println("Enter two numbers:" + x + y);
-    
-    if (y == 0)
+
+    if (y==0)
     {
-        System.out.println("Arith")
+      System.out.print("Error Message");
     }
+    else if (((x2 / x1) <= 8) && ((x2 /x1) > 1))
+    {
+      System.out.print("Ratio ok");
+    }
+    
+
 
 
     // TODO: Problem 2
