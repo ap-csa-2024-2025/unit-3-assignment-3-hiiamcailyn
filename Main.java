@@ -1,44 +1,60 @@
-import java.util.Scanner;
-
 public class Main
 {
-  public static void main(String[] args)
-  {
-    // TODO: Problem 1
-    Scanner sc = new Scanner(System.in);
-    int x1 = sc.nextInt();
-    int x2 = sc.nextInt(); 
+	public static void main(String[] args)
+	{
+		Scanner sc = new Scanner(System.in);
+		// Problem 1
+		System.out.println("Enter two numbers:");
+		int x = sc.nextInt();
+		int y = sc.nextInt();
 
-    if (x2 == 0)
-    {
-      System.out.print("Error Message");
-    }
-    else 
-    {
-      double ratio = (double) x1/ x2;
-      if  (1 < ratio && ratio <= 8)
-      {
-        System.out.println("Ratio ok");
-      }
-    }
-  }
+		if (y == 0)
+		{
+			System.out.println("Arithmetic exception");
+		}
+		else
+		{
+			double ratio = (double) x / y;
+			if (1 < ratio && ratio <= 8)
+			{
+				System.out.println("Ratio OK");
+			}
+		}
 
+		// Problem 2
+		System.out.println("Enter two numbers:");
+		int a = sc.nextInt();
+		int b = sc.nextInt();
 
+		if (b == 0)
+		{
+			System.out.println("Divide by 0 error");
+		}
+		else if (a % b == 0)
+		{
+			System.out.println("Is a factor");
+		}
 
-    // TODO: Problem 2
+		// Problem 3
+		System.out.println("enter a number in the fifties");
+		int num = sc.nextInt();
 
+		if (num < 50 || num > 59)
+		{
+			num = 55;
+			System.out.println("That's not in the fifties");
+		}
 
-    // TODO: Problem 3
-  }
+		System.out.println("Your number is " + num);
 
-  // TODO: In-class assignment
-  // Create a method that takes in two Rectangles and returns
-  // true if they are equal, and false otherwise.  Two
-  // Rectangles are considered equal if their widths are equal,
-  // and if their lengths are equal.
-  // public static boolean rectEqual(Rectangle r1, Rectangle r2)
-  // {
-  //   // implement solution here
-  //   return false;
-  }
+		// Problem
+		System.out.println("Give two numbers");
+		x = sc.nextInt();
+		y = sc.nextInt();
+
+		if (y <= 9 || x > 2 && x * y > 10)
+		{
+			System.out.println("pass");
+		}
+	}
 }
